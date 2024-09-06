@@ -13,7 +13,7 @@ Please contact  **balinda@snu.ac.kr** or **boajang97@gmail.com** if you have que
 
 
 ### Fine-tuning with Fundus and ImageNet+Fundus weights
-
+- "The current maintenance and GitHub update are scheduled. The model will be released after the paper is published."
 
 ### 📃Citation
 
