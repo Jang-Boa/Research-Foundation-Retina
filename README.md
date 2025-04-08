@@ -1,6 +1,6 @@
 ## "M-FunFound: A Minimally Supervised Fundus Foundation Model for Multiple Tasks"
 
-![alt text](Figure 1.tif)
+![alt text](image.tif)
 
 
 Please contact  **balinda@snu.ac.kr** or **boajang97@gmail.com** if you have questions.
