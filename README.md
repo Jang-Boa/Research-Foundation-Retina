@@ -1,4 +1,4 @@
-## "A Disease-Specific Foundation Model Using Over 100K Fundus Images: Release and Validation for Abnormality and Multi-Disease Classification on Downstream Tasks"
+## "M-FunFound: A Minimally Supervised Fundus Foundation Model for Multiple Tasks"
 
 ![alt text](image.png)
 
@@ -8,8 +8,8 @@ Please contact  **balinda@snu.ac.kr** or **boajang97@gmail.com** if you have que
 *The repository is currently empty. All codes will be uploaded after publication.*
 
 ### Key Features 
-- Fundus and ImageNet+Fundus is pre-trained on 0.1 million retinal images with super-vised learning.
-- Fundus and ImageNet+Fundus can be efficiently adapted to customised tasks.
+- M-FunFound is pre-trained on 0.1 million retinal images with super-vised learning.
+- M-FunFound can be efficiently adapted to customised tasks.
 
 
 ### Fine-tuning with Fundus and ImageNet+Fundus weights
