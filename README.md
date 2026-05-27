@@ -1,29 +1,20 @@
-<<<<<<< HEAD
-# A Disease-Specific Foundation Model Using Over 100K Fundus Images
-=======
-## "M-FunFound: A Minimally Supervised Fundus Foundation Model for Multiple Tasks"
->>>>>>> 7bcfc6702972b36bcfebf9cce0e1800ca6d86e8d
+# M-FunFound: A Minimally Supervised Fundus Foundation Model for Multiple Tasks
 
 **Release and Validation for Abnormality and Multi-Disease Classification on Downstream Tasks**
 
 ![overview](image.png)
 
-This repository hosts the official code and pre-trained weights for our disease-specific foundation model for retinal fundus images. The model was pre-trained on over 100,000 fundus images and can be efficiently adapted to a variety of downstream classification tasks.
+This repository hosts the official code and pre-trained weights for **M-FunFound**, a minimally supervised fundus foundation model. The model was pre-trained on over 100,000 retinal fundus images and can be efficiently adapted to a wide range of downstream classification tasks.
 
 ---
 
-<<<<<<< HEAD
 ## Key Features
-- Pre-trained on ~100K retinal fundus images with supervised learning.
-- Two flavors of weights are released:
+- **M-FunFound** is pre-trained on ~100K retinal fundus images with minimal supervision.
+- Three pre-trained weight variants are released:
   - **Fundus** — trained from scratch on fundus images only.
   - **ImageNet + Fundus** — initialized from ImageNet weights, then trained on fundus images.
+  - **M-FunFound** — the full minimally supervised foundation model.
 - Easily fine-tuned or used as a feature extractor for custom downstream tasks (e.g., AMD, Glaucoma, DMR, ERM, RVO, Pathologic myopia).
-=======
-### Key Features 
-- M-FunFound is pre-trained on 0.1 million retinal images with super-vised learning.
-- M-FunFound can be efficiently adapted to customised tasks.
->>>>>>> 7bcfc6702972b36bcfebf9cce0e1800ca6d86e8d
 
 ---
 
@@ -53,13 +44,15 @@ After downloading, place the `.pth` files inside a `weights/` directory at the p
 ```
 weights/
 ├── resnet50_512_Fundus.pth
-└── resnet50_512_ImageNet+Fundus.pth
+├── resnet50_512_ImageNet+Fundus.pth
+└── M-FunFound_512.pth
 ```
 
 | File | Backbone | Input size | Pre-training |
 |---|---|---|---|
 | `resnet50_512_Fundus.pth` | ResNet-50 | 512×512 | Fundus only |
 | `resnet50_512_ImageNet+Fundus.pth` | ResNet-50 | 512×512 | ImageNet → Fundus |
+| `M-FunFound_512.pth` | ResNet-50 | 512×512 | M-FunFound (minimally supervised) |
 
 ---
 
@@ -96,7 +89,7 @@ import torch
 from Downstream_Task.utils.model import ResNetModel
 
 model = ResNetModel("resnet50", num_classes=<YOUR_NUM_CLASSES>)
-state_dict = torch.load("weights/resnet50_512_ImageNet+Fundus.pth", map_location="cpu")
+state_dict = torch.load("weights/M-FunFound_512.pth", map_location="cpu")
 # Then fine-tune on your dataset.
 ```
 
@@ -108,7 +101,7 @@ If you find this repository useful, please cite our paper:
 
 ```bibtex
 @article{<TBD>,
-  title   = {A Disease-Specific Foundation Model Using Over 100K Fundus Images: Release and Validation for Abnormality and Multi-Disease Classification on Downstream Tasks},
+  title   = {M-FunFound: A Minimally Supervised Fundus Foundation Model for Multiple Tasks},
   author  = {<TBD>},
   journal = {<TBD>},
   year    = {<TBD>}
@@ -135,4 +128,4 @@ For questions, please reach out:
 
 ## Acknowledgements
 
-We thank all collaborators and institutions that contributed fundus images and annotations used in the development of this foundation model.
+We thank all collaborators and institutions that contributed fundus images and annotations used in the development of M-FunFound.
