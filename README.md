@@ -10,10 +10,6 @@ This repository hosts the official code and pre-trained weights for **M-FunFound
 
 ## Key Features
 - **M-FunFound** is pre-trained on ~100K retinal fundus images with minimal supervision.
-- Three pre-trained weight variants are released:
-  - **Fundus** — trained from scratch on fundus images only.
-  - **ImageNet + Fundus** — initialized from ImageNet weights, then trained on fundus images.
-  - **M-FunFound** — the full minimally supervised foundation model.
 - Easily fine-tuned or used as a feature extractor for custom downstream tasks (e.g., AMD, Glaucoma, DMR, ERM, RVO, Pathologic myopia).
 
 ---
@@ -43,15 +39,11 @@ After downloading, place the `.pth` files inside a `weights/` directory at the p
 
 ```
 weights/
-├── resnet50_512_Fundus.pth
-├── resnet50_512_ImageNet+Fundus.pth
 └── M-FunFound_512.pth
 ```
 
 | File | Backbone | Input size | Pre-training |
 |---|---|---|---|
-| `resnet50_512_Fundus.pth` | ResNet-50 | 512×512 | Fundus only |
-| `resnet50_512_ImageNet+Fundus.pth` | ResNet-50 | 512×512 | ImageNet → Fundus |
 | `M-FunFound_512.pth` | ResNet-50 | 512×512 | M-FunFound (minimally supervised) |
 
 ---
