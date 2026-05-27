@@ -2,7 +2,7 @@
 
 **Release and Validation for Abnormality and Multi-Disease Classification on Downstream Tasks**
 
-![overview](image.png)
+![alt text](image.png)
 
 This repository hosts the official code and pre-trained weights for **M-FunFound**, a minimally supervised fundus foundation model. The model was pre-trained on over 100,000 retinal fundus images and can be efficiently adapted to a wide range of downstream classification tasks.
 
