@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Model weights (hosted on Google Drive — see README)
+weights/*
+!weights/.gitkeep
+
+# Data
+data/
+datasets/
+*.h5
+*.hdf5
+*.npy
+*.npz
+
+# Logs / experiment outputs
+logs/
+runs/
+wandb/
+outputs/
+checkpoints/
+*.log
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Misc
+*.swp
+*.swo
+*.bak
+*.tmp
