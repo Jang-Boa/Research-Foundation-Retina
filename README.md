@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # A Disease-Specific Foundation Model Using Over 100K Fundus Images
+=======
+## "M-FunFound: A Minimally Supervised Fundus Foundation Model for Multiple Tasks"
+>>>>>>> 7bcfc6702972b36bcfebf9cce0e1800ca6d86e8d
 
 **Release and Validation for Abnormality and Multi-Disease Classification on Downstream Tasks**
 
@@ -8,12 +12,18 @@ This repository hosts the official code and pre-trained weights for our disease-
 
 ---
 
+<<<<<<< HEAD
 ## Key Features
 - Pre-trained on ~100K retinal fundus images with supervised learning.
 - Two flavors of weights are released:
   - **Fundus** — trained from scratch on fundus images only.
   - **ImageNet + Fundus** — initialized from ImageNet weights, then trained on fundus images.
 - Easily fine-tuned or used as a feature extractor for custom downstream tasks (e.g., AMD, Glaucoma, DMR, ERM, RVO, Pathologic myopia).
+=======
+### Key Features 
+- M-FunFound is pre-trained on 0.1 million retinal images with super-vised learning.
+- M-FunFound can be efficiently adapted to customised tasks.
+>>>>>>> 7bcfc6702972b36bcfebf9cce0e1800ca6d86e8d
 
 ---
 
